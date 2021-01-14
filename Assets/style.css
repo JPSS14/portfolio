@@ -1,0 +1,9 @@
+.main_header{
+    display: flex;
+    flex-wrap: wrap;
+    background: var(--mainThemeColor);
+    padding: 10px;
+}
+.main_header h1{
+    color: #fff;
+}
