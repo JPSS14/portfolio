@@ -3,7 +3,31 @@
     flex-wrap: wrap;
     background: var(--mainThemeColor);
     padding: 10px;
+    justify-content: space-between;
 }
 .main_header h1{
     color: #fff;
+}
+.logo{
+    flex-basis: 13%;
+}
+.main_header_nav{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 18%;
+}
+.main_header_nav ul{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-basis: 100%;
+    align-items: center;
+    justify-content: flex-end;
+}
+.main_header_nav ul li{
+    margin: 0 10px;
+}
+.main_header_nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.7em;
 }
