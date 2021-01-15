@@ -31,3 +31,35 @@
     color: #fff;
     font-size: 1.7em;
 }
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.foto{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 25%;
+    max-width: 300px;
+    margin: 20px auto;
+}
+.foto_img{
+    width: 100%;
+    border-radius: 50%;
+    border: solid 5px var(--mainThemeColor);
+}
+
+.presentation{
+    flex-basis: 100%;
+}
+.presentation p{
+    text-align: center;
+    font-size: 1.6em;
+}
+.my_name{
+    color: var(--mainThemeColor);
+}
+.description{
+    font-size: 0.875em;
+}
