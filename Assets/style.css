@@ -223,10 +223,66 @@ DESCRIPTION ARTICLE
 }
 
 /* TECHNOLOGIES */
+.description_article_technologies{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+}
+.description_article_technologies_header{
+    flex-basis: 100%;
+}
+.description_article_technologies_header h2{
+    font-size: 1.8em;
+    margin: 5px 0;
+}
+.description_article_technologies_list{
+    margin: 5px 0;
+}
+.description_article_technologies_list li{
+    font-size: 1.1em;
+    margin: 4px 0;
+}
 
 /* LEARNING */
-
+.description_article_learning{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+}
+.description_article_learning_header{
+    flex-basis: 100%;
+}
+.description_article_learning_header h2{
+    font-size: 1.8em;
+    margin: 5px 0;
+}
+.description_article_learning_list{
+    margin: 5px 0;
+}
+.description_article_learning_list li{
+    font-size: 1.1em;
+    margin: 4px 0;
+}
 /* STATE */
+.description_article_state{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+}
+.description_article_state_header{
+    flex-basis: 100%;
+}
+.description_article_state_header h2{
+    font-size: 1.8em;
+    margin: 5px 0;
+}
+.description_article_state_list{
+    margin: 5px 0;
+}
+.description_article_state_list li{
+    font-size: 1.1em;
+    margin: 4px 0;
+}
 
 @media (min-width: 1px){
     /* PROJECT ARTICLE */
