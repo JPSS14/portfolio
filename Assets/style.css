@@ -170,7 +170,7 @@ DESCRIPTION ARTICLE
 .description_article{
     display: flex;
     flex-wrap: wrap;
-    flex-basis: 98%;
+    flex-basis: 80%;
 }
 .description_article_header{
     display: flex;
@@ -197,6 +197,28 @@ DESCRIPTION ARTICLE
 }
 .description_article_header a:last-child{
     margin-left: 10px;
+}
+.description_article_content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+}
+.description_article_content h2{
+    font-size: 1.8em;
+    margin: 5px 0;
+}
+.description_article_content p{
+    margin: 5px 0;
+    font-size: 1.1em;
+    text-align: justify;
+}
+.description_article_content img{
+    width: 100%;
+    margin: 5px 0;
+}
+.description_article_content a{
+    text-decoration: none;
+    color: var(--mainThemeColor);
 }
 
 @media (min-width: 1px){
