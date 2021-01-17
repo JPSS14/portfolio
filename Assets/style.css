@@ -117,6 +117,10 @@ PROJECTS
 .status_comp{
     color: #16DE29;
 }
+.disabled{
+    background: gray !important; 
+    cursor: default;
+}
 
 /* PROJECT ARTICLE */
 
@@ -288,6 +292,8 @@ DESCRIPTION ARTICLE
     font-size: 1.1em;
     margin: 4px 0;
 }
+
+
 
 @media (min-width: 1px){
     /* PROJECT ARTICLE */
