@@ -105,6 +105,7 @@ PROJECTS
     flex-wrap: wrap;
     padding: 20px 0;
     font-size: 1.3em;
+    max-height: 76px;
 }
 .project_header img{
     width: 10%;
@@ -112,6 +113,9 @@ PROJECTS
 }
 .status_otmz{
     color: #EDC218;
+}
+.status_comp{
+    color: #16DE29;
 }
 
 /* PROJECT ARTICLE */
@@ -142,6 +146,7 @@ PROJECTS
 }
 .project_article_content_text{
     flex-basis: 48%;
+    margin-left: 10px;
 }
 .title{
     font-size: 1.3em;
