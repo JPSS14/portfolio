@@ -8,3 +8,10 @@
 :root{
     --mainThemeColor: #1B6DF7;
 }
+.img-container{
+    flex-basis: 100%;
+}
+
+.border{
+    border: solid 3px var(--mainThemeColor);
+}

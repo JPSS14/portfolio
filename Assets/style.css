@@ -111,11 +111,15 @@ PROJECTS
     width: 10%;
     margin-left: 10px;
 }
+
 .status_otmz{
     color: #EDC218;
 }
 .status_comp{
     color: #16DE29;
+}
+.status_const{
+    color: #FA0C05;
 }
 .disabled{
     background: gray !important; 
@@ -131,6 +135,10 @@ PROJECTS
     border-right: solid 7px var(--mainThemeColor);
     border-radius: 5px;
     padding: 10px 10px 20px 10px;
+    margin: 15px 0;
+}
+.project_article:first-child{
+    margin: 0;
 }
 .project_article_header{
     flex-basis: 100%;
@@ -224,7 +232,7 @@ DESCRIPTION ARTICLE
 }
 .description_article_content img{
     width: 100%;
-    margin: 5px 0;
+    margin: 10px 0;
 }
 .description_article_content a{
     text-decoration: none;
