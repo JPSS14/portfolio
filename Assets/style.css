@@ -304,6 +304,44 @@ DESCRIPTION ARTICLE
     margin: 4px 0;
 }
 
+/* 
+FOOTER
+*/
+.main_footer{
+    display: flex;
+    flex-wrap: wrap;
+    background: var(--mainThemeColor);
+    padding: 10px;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.main_footer h1 a{
+    color: #fff;
+    text-decoration: none;
+}
+.logo{
+    flex-basis: 13%;
+}
+.main_footer_nav{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 18%;
+}
+.main_footer_nav ul{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-basis: 100%;
+    align-items: center;
+    justify-content: flex-end;
+}
+.main_footer_nav ul li{
+    margin: 0 10px;
+}
+.main_footer_nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.7em;
+}
 
 
 @media (min-width: 1px){
