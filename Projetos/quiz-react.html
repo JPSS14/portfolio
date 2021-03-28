@@ -87,6 +87,8 @@
                 <p>MixerAlternatives é um componente que recebe do context, se a questão está ativa, qual a questão e suas alternativas e um número aleatório de 1 a 4. No retorno do componente é gerado estrutura condicional. Se o usuário ativou a questão e o número aleatório for igual a 1-4, então é chamado um componente “Alternative” que recebe as 4 alternativas onde o número aleatório é onde a resposta vai ficar. Caso contrário retorna apenas o ícone do herói selecionado.
                 </p>
 
+                <img src="../Assets/images/quiz-react-mixer-alternatives.png">
+
                 <h3>InteractiveButtons</h3>
 
                 <p>InteractiveButtons recebe do context, funções de correção e a função de gerar uma nova questão. Aqui fica todos os botões utilizados para interagir com as questões cada um possui funcionalidades específicas e condicionais.
@@ -107,6 +109,12 @@
                 <p>E o botão desistir reseta a questão ativa, e retorna o botão “Iniciar Quiz!”.</p>
 
                 <img src="../Assets/images/quiz-react-button-correction.png">
+
+                <h3>CorrectionStatus</h3>
+
+                <p>É um componente que recebe um valor de um hook que gerado através da função de correção lá e visto se o usuário acertou a questão ou não, o CorrectionStatus verifica o resultado baseado nele é exibido na tela “Correto” ou “Errado”.</p>
+
+                <img src="../Assets/images/quiz-react-correction-status.png">
 
 
 
