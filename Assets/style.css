@@ -228,6 +228,14 @@ DESCRIPTION ARTICLE
     font-size: 1.8em;
     margin: 5px 0;
 }
+.description_article_content h3{
+    font-size: 1.4em;
+    margin: 5px 0;
+}.description_article_content h4{
+    font-size: 1.2em;
+    margin: 5px 0;
+    flex-basis: 100%;
+}
 .description_article_content p{
     margin: 5px 0;
     font-size: 1.1em;

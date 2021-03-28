@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="../Assets/fonticon.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Assets/boot.css">
+    <link rel="stylesheet" href="../Assets/style.css">
+
+    <title>João Pedro Scarabelli Silva</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="main_header">
+        <h1 class="logo"><a href="../index.html">MyPortfolio</a></h1>
+        <nav class="main_header_nav">
+            <ul>
+                <li><a class="icon-linkedin2" href="https://www.linkedin.com/in/jo%C3%A3o-pedro-s-silva/"></a></li>
+                <li><a class="icon-github" href="https://github.com/JPSS14"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- HEADER -->
+
+    <!-- MAIN -->
+    <main class="main">
+        <article class="description_article">
+            <!-- HEADER -->
+            <header class="description_article_header">
+                <h1>Quiz React</h1>
+                <p>Status: <span class="status_comp">Completo</span></p>
+                <a href="https://github.com/JPSS14/Clone-ign-brasil" target="_blank">Ver Código</a>
+                <a href="#" class="disabled">Testar</a>
+            </header>
+            <!-- /HEADER -->
+
+            <!-- CONTENT -->
+            <div class="description_article_content">
+                <h2>O que me levou a construir o projeto?</h2>
+
+                <p>Eu participei de um evento de tecnologia chamado NLW que era a quarta edição do evento, e a minha
+                    primeira participação, nela aprendi alguns conceitos de React, com Next e Typescript até então só
+                    tinha praticado apenas React. Durante o evento percebi que o quão incrível são essas tecnologias e eu tinha
+                    que criar algum projeto relacionado ao o que aprendi, então tive a ideia de criar um quiz dos
+                    Vingadores.
+                </p>
+
+                <img src="../Assets/images/quiz-react.png">
+
+                <h2>Resumo</h2>
+
+                <p>O Quiz React possui dois modos, o “Jogar” e o “Treinar”, no “Jogar” você ganha experiência e sobe o seu nível, mediante ao acerto de uma pergunta sobre um herói à sua escolha. No “Treinar” você não ganha experiência apenas consegue ver as perguntas e descobrir a resposta mediante a tentativa e erro antes de ir para o modo “Jogar”. Ao todo são 97 perguntas divididas entre todos os heróis disponíveis. A seguir temos uma descrição detalhada sobre o funcionamento do sistema.</p>
+
+                <img src="../Assets/images/quiz-react-menu.png">
+
+                <h2>Como funciona?</h2>
+
+                <p>Inicialmente você seleciona o modo de jogo, logo em seguida você é levado para uma página, essa página pode ser a “play-mode” ou “training-mode”. Depois é carregado um componente onde estão todos os heróis disponíveis, os heróis estão vindo de um arquivo JSON chamado heroes onde temos o nome, endereço da imagem e a rota correspondente a cada herói. </p>
+
+                <h3>Seleção de heróis</h3>
+
+                <p>Ao todo para aparecer os heróis temos 2 componentes a página chama o componente “Selection” e envia para ele um parâmetro correspondente à página, ou seja a página play-mode vai enviar o parâmetro “play” e a training-mode envia o parâmetro “training”.</p>
+
+                <p>Dentro do Selection é feito a leitura do JSON heroes com o map, e para cada objeto do array é criado um componente do tipo “HeroeSelect”, e enviado por parâmetro todos os dados do JSON mais o parâmetro que a página enviou o “play” ou o “training”.
+                </p>
+
+                <p>No HeroeSelect é criado na interface uma div contendo a imagem do herói e seu nome, tudo dentro de um link que é gerado dinamicamente na construção do elemento, esse link é formado pelo parâmetro de modo, mais a rota do personagem. Exemplo: “play/homem-de-ferro” ou “training/thor”. A construção dinâmica tem um papel fundamental para a regra de negócio do sistema.</p>
+
+                <img src="../Assets/images/quiz-react-selection.png">
+
+                <h2>Questões</h2>
+
+                <p>Agora dentro da rota “/play” ou “training”, acessamos uma página dinâmica chamada [heroe] que carrega um componente chamado “HeroeQuestion”. Nesse componente é carregada a estrutura padrão do quiz, através da rota(url) é retirado o nome do herói utilizando useRouter com essa informação carregamos uma imagem de background outras informações que veremos mais adiante.
+                </p>
+
+                <p>Três componentes são chamados dentro do componente “HeroeQuestion” são eles: MixerAlternatives, InteractiveButtons e CorrectionStatus. Para todos estes componentes conseguirem comunicar-se entre si existe o QuestionsContext, ele é um context que é responsável por servir funções que podem ser acessadas por toda a aplicação. Nele é possível ver qual a questão está ativa, qual alternativa o usuário escolheu, se ela está correta entre muitas outras.
+                </p>
+
+                <img src="../Assets/images/quiz-react-question.png">
+
+                <h3>MixerAlternatives</h3>
+
+                <p>MixerAlternatives é um componente que recebe do context, se a questão está ativa, qual a questão e suas alternativas e um número aleatório de 1 a 4. No retorno do componente é gerado estrutura condicional. Se o usuário ativou a questão e o número aleatório for igual a 1-4, então é chamado um componente “Alternative” que recebe as 4 alternativas onde o número aleatório é onde a resposta vai ficar. Caso contrário retorna apenas o ícone do herói selecionado.
+                </p>
+
+                <h3>InteractiveButtons</h3>
+
+                <p>InteractiveButtons recebe do context, funções de correção e a função de gerar uma nova questão. Aqui fica todos os botões utilizados para interagir com as questões cada um possui funcionalidades específicas e condicionais.
+                </p>
+
+                <h4>Botão: Iniciar Quiz!</h4>
+
+                <p>Inicialmente aparece um botão azul escrito “Iniciar quiz!”, quando acionado ele dispara uma função que recebe através do useRouter o nome do herói e envia para uma outra função que é responsável por acessar um JSON com 97 perguntas sobre todos os heróis, lá ele filtra o herói que está selecionado e cria um array com todas, em seguida é misturado a ordem do array e selecionada a primeira e atualizada o useState da questão mostrando que existe uma nova questão ativa. Em seguida é gerado um número aleatório de 1-4 para determinar a posição da resposta.</p>
+
+                <img src="../Assets/images/quiz-react-button-start.png">
+
+                <p>Quando ativado o botão some da tela dando lugar para os botões “corrigir” e “desistir”.</p>
+
+                <h4>Corrigir e Desistir</h4>
+
+                <p>Quando for acionado o botão “Iniciar Quiz!”, é gerado através de uma condição os botões Corrigir e Desistir, mais uma vez através do useRouter a rota é consultada e se estiver no modo play, é chamada uma função de correção que se a opção estiver correta o usuário recebe um aviso e experiência. Caso esteja no modo training é chamada uma função que retorna apenas um aviso.</p>
+
+                <p>E o botão desistir reseta a questão ativa, e retorna o botão “Iniciar Quiz!”.</p>
+
+                <img src="../Assets/images/quiz-react-button-correction.png">
+
+
+
+            </div>
+            <!-- /CONTENT -->
+
+            <!-- TECHNOLOGIES -->
+            <div class="description_article_technologies">
+                <header class="description_article_technologies_header">
+                    <h2>Tecnologias</h2>
+                </header>
+                <ul class="description_article_technologies_list">
+                    <li>Typescript</li>
+                    <li>JavaScript</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>React JS</li>
+                    <li>Next JS</li>
+                </ul>
+            </div>
+            <!-- /TECHNOLOGIES -->
+
+            <!-- LEARNING -->
+            <div class="description_article_learning">
+                <header class="description_article_learning_header">
+                    <h2>Aprendizado</h2>
+                </header>
+                <ul class="description_article_learning_list">
+                    <li>Estilização</li>
+                    <li>Componetização</li>
+                    <li>Uso do Context</li>
+                    <li>Uso do UseState</li>
+                    <li>Uso do UseRouter</li>
+                    <li>Uso do UseEffect</li>
+                    <li>Interfaces com Typescript</li>
+                    <li>Rotas dinâmicas com Next JS</li>
+                    <li>Uso do filter</li>
+                    <li>Uso do map</li>
+                    <li>Uso do module css</li>
+                </ul>
+            </div>
+            <!-- /LEARNING -->
+
+            <!-- STATE -->
+            <div class="description_article_state">
+                <header class="description_article_state_header">
+                    <h2>Estado do projeto: <span class="status_comp">Completo</span></h2>
+                </header>
+                <ul class="description_article_state_list">
+                </ul>
+            </div>
+            <!-- /STATE -->
+        </article>
+    </main>
+    <!-- /MAIN -->
+
+    <!-- FOOTER -->
+    <footer class="main_footer">
+        <h1 class="logo"><a href="../index.html">MyPortfolio</a></h1>
+        <nav class="main_footer_nav">
+            <ul>
+                <li><a class="icon-linkedin2" href="https://www.linkedin.com/in/jo%C3%A3o-pedro-s-silva/"></a></li>
+                <li><a class="icon-github" href="https://github.com/JPSS14"></a></li>
+            </ul>
+        </nav>
+    </footer>
+    <!-- /FOOTER -->
+</body>
+
+</html>
