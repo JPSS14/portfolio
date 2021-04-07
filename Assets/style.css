@@ -160,14 +160,18 @@ PROJECTS
 }
 .project_article_header_tecnologies ul{
     display: flex;
-    flex: wrap;
+    flex-wrap: wrap;
     flex-basis: 100%;
+    justify-content: flex-start;
 }
 .project_article_header_tecnologies ul li{
-    margin-right: 10px;
+    flex-basis: 5%;
+    margin-right: 5px;
+    margin-top: 2px;
     padding: 3px 7px;
     border: solid 1px var(--mainThemeColor);
     border-radius: 20px;
+    text-align: center;
 }
 
 .project_article_content{
