@@ -15,3 +15,45 @@
 .border{
     border: solid 3px var(--mainThemeColor);
 }
+
+.accordion {
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--mainThemeColor);
+    font-size: 1.2em;
+    cursor: pointer;
+    padding: 18px;
+    flex-basis: 100%;
+    text-align: left;
+    border: solid 3px var(--mainThemeColor);
+    transition: 0.4s;
+  }
+
+  .active, .accordion:hover {
+    background-color: var(--mainThemeColor);
+    color: #fff;
+  }
+
+  .panel {
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    padding: 0 18px;
+    display: none;
+    border-left: solid 3px var(--mainThemeColor);
+    border-right: solid 3px var(--mainThemeColor);
+    border-bottom: solid 3px var(--mainThemeColor);
+  }
+
+  .panel h3{
+      flex-basis: 100%;
+  }
+
+  .panel code{
+      display: flex;
+      flex-wrap: wrap;
+      flex-basis: 20%;
+  }
+
+  .panel code pre{
+      width: 100%;
+  }
