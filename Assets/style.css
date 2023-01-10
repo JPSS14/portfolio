@@ -97,19 +97,25 @@ PROJECTS
 
 /* PROJECT */
 .project{
-    display: flex;
-    flex-wrap: wrap;
+    max-width: 1480px;
+    margin: 0 auto;
 }
 .project_header{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     padding: 20px 0;
     font-size: 1.3em;
     max-height: 76px;
 }
 .project_header img{
-    width: 10%;
+    width: 100%;
     margin-left: 10px;
+    max-height: 76px;
+}
+.header_img_container{
+    width: 35px;
+    height: 35px;
 }
 
 .status_otmz{
@@ -216,6 +222,7 @@ DESCRIPTION ARTICLE
     display: flex;
     flex-wrap: wrap;
     flex-basis: 80%;
+    max-width: 1280px;
 }
 .description_article_header{
     display: flex;
