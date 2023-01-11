@@ -7,6 +7,7 @@
 
 :root{
     --mainThemeColor: #1B6DF7;
+    --success: #64D444;
 }
 .img-container{
     flex-basis: 100%;

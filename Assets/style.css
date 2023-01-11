@@ -214,6 +214,14 @@ PROJECTS
     padding: 5px 10px;
     font-size: 1.2em;
 }
+.success{
+    text-decoration: none;
+    color: #fff;
+    background: var(--success);
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 1.2em;
+}
 
 /*
 DESCRIPTION ARTICLE
@@ -257,10 +265,12 @@ DESCRIPTION ARTICLE
     flex-basis: 100%;
 }
 .description_article_content h2{
+    width: 100%;
     font-size: 1.8em;
     margin: 5px 0;
 }
 .description_article_content h3{
+    width: 100%;
     font-size: 1.4em;
     margin: 5px 0;
 }.description_article_content h4{
