@@ -178,6 +178,7 @@ PROJECTS
     border: solid 1px var(--mainThemeColor);
     border-radius: 20px;
     text-align: center;
+    white-space: nowrap;
 }
 
 .project_article_content{
