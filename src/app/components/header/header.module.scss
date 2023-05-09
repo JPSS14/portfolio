@@ -1,0 +1,35 @@
+@use "../../colors.scss";
+
+.header {
+  color: #fff;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.feature__text {
+  color: colors.$mainTheme;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    li {
+      display: flex;
+      align-self: center;
+      &:last-child {
+        margin-left: 15px;
+      }
+    }
+    .icon {
+      font-size: 2.2rem;
+    }
+  }
+}
