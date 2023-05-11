@@ -1,3 +1,6 @@
+import { Header } from "./components/header/header";
+import { Intro } from "./components/intro/intro";
+
 export default function HomeTemplate({
   children,
 }: {
@@ -5,9 +8,8 @@ export default function HomeTemplate({
 }) {
   return (
     <div>
-      <header>
-        <h1>Template</h1>
-      </header>
+      <Header />
+      <Intro />
       <div>{children}</div>
     </div>
   );

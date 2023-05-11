@@ -1,7 +1,7 @@
-import "./globals.css";
+import "./globals.scss";
 import { Ubuntu } from "next/font/google";
 
-const inter = Ubuntu({
+const ubuntu = Ubuntu({
   subsets: ["latin"],
   weight: ["300", "400", "500", "700"],
 });
@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <body className={inter.className}>{children}</body>
+      <body className={ubuntu.className}>{children}</body>
     </html>
   );
 }
