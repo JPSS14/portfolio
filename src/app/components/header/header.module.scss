@@ -31,6 +31,10 @@
     }
     .icon {
       font-size: 2.2rem;
+
+      &:hover {
+        color: colors.$mainTheme;
+      }
     }
   }
 }
