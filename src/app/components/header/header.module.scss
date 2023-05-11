@@ -1,4 +1,4 @@
-@use "../../colors.scss";
+@use "src/app/theme.scss";
 
 .header {
   color: #fff;
@@ -9,7 +9,7 @@
 }
 
 .feature__text {
-  color: colors.$mainTheme;
+  color: theme.$mainTheme;
 }
 
 .navigation {
@@ -33,7 +33,7 @@
       font-size: 2.2rem;
 
       &:hover {
-        color: colors.$mainTheme;
+        color: theme.$mainTheme;
       }
     }
   }

@@ -1,5 +1,5 @@
-@use 'colors';
+@use "theme";
 
-.main{
-  background: colors.$mainTheme;
+.main {
+  background: theme.$mainTheme;
 }
