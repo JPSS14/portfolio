@@ -1,5 +1,4 @@
-import { Header } from "./components/header/header";
-import { Intro } from "./components/intro/intro";
+import { Header, Intro } from "./components";
 
 export default function HomeTemplate({
   children,
