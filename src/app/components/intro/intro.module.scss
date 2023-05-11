@@ -1,0 +1,89 @@
+@use "../../colors.scss";
+
+.intro {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.background__image {
+  width: 100%;
+  height: 100vh;
+}
+
+.intro__content {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  top: 25%;
+  padding: 0 20px;
+
+  .lozenge__external {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 291px;
+    height: 291px;
+    margin-left: 60px;
+    padding: 12px;
+    border: 3px solid colors.$mainTheme;
+    border-radius: 15px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+
+    .lozenge__internal {
+      width: calc(291px - 32px);
+      height: calc(291px - 32px);
+      background: #e0e6e2;
+      overflow: hidden;
+      border: 3px solid #fff;
+      border-radius: 15px;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+
+      .lozenge__image {
+        position: absolute;
+        width: 150%;
+        height: 150%;
+        top: -16%;
+        left: -9%;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  .content__text {
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+
+    .text__dev {
+      color: #fff;
+      font-size: 2rem;
+      margin-top: 10px;
+    }
+
+    .text__name {
+      color: colors.$mainTheme;
+      font-size: 3rem;
+      font-weight: 800;
+    }
+
+    .text__skills {
+      color: #fff;
+      font-size: 1.5rem;
+    }
+  }
+}
