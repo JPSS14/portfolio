@@ -15,59 +15,80 @@
   position: absolute;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   width: 100%;
   top: 25%;
   padding: 0 20px;
 
-  .lozenge__external {
+  .avatar__lozenge {
+    width: 30%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 291px;
-    height: 291px;
-    margin-left: 60px;
-    padding: 12px;
-    border: 3px solid theme.$mainTheme;
-    border-radius: 15px;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-
-    .lozenge__internal {
-      width: calc(291px - 32px);
-      height: calc(291px - 32px);
-      background: #e0e6e2;
-      overflow: hidden;
-      border: 3px solid #fff;
+    .lozenge__external {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 291px;
+      height: 291px;
+      padding: 12px;
+      border: 3px solid theme.$mainThemeColor;
       border-radius: 15px;
-      -webkit-transform: rotate(0deg);
-      -moz-transform: rotate(0deg);
-      -ms-transform: rotate(0deg);
-      -o-transform: rotate(0deg);
-      transform: rotate(0deg);
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
 
-      .lozenge__image {
-        position: absolute;
-        width: 150%;
-        height: 150%;
-        top: -16%;
-        left: -9%;
-        -webkit-transform: rotate(-45deg);
-        -moz-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
-        -o-transform: rotate(-45deg);
-        transform: rotate(-45deg);
+      .lozenge__internal {
+        width: calc(291px - 32px);
+        height: calc(291px - 32px);
+        background: #e0e6e2;
+        overflow: hidden;
+        border: 3px solid #fff;
+        border-radius: 15px;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+
+        .lozenge__image {
+          position: absolute;
+          width: 150%;
+          height: 150%;
+          top: -16%;
+          left: -9%;
+          -webkit-transform: rotate(-45deg);
+          -moz-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+          -o-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+        }
+      }
+    }
+
+    @media (max-width: theme.$midleDesktop) {
+      width: 100%;
+    }
+
+    @media (max-width: theme.$mobileOnly) {
+      .lozenge__external {
+        width: 250px;
+        height: 250px;
+        .lozenge__internal {
+          width: calc(250px - 32px);
+          height: calc(250px - 32px);
+        }
       }
     }
   }
 
   .content__text {
-    margin-left: 100px;
+    margin-left: 70px;
     display: flex;
     flex-direction: column;
+    width: 50%;
 
     .text__dev {
       color: #fff;
@@ -76,7 +97,7 @@
     }
 
     .text__name {
-      color: theme.$mainTheme;
+      color: theme.$mainThemeColor;
       font-size: 3rem;
       font-weight: 800;
     }
@@ -84,6 +105,24 @@
     .text__skills {
       color: #fff;
       font-size: 1.5rem;
+    }
+    @media (max-width: theme.$midleDesktop) {
+      width: 70%;
+      margin: 20px auto;
+    }
+
+    @media (max-width: theme.$mobileOnly) {
+      width: 100%;
+      margin: 30px auto;
+      .text__dev {
+        font-size: 1.5rem;
+      }
+      .text__name {
+        font-size: 2.5rem;
+      }
+      .text__skills {
+        font-size: 1.3rem;
+      }
     }
   }
 }

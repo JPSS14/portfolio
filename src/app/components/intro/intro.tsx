@@ -12,15 +12,17 @@ export const Intro = () => {
         height={1280}
       />
       <div className={styles.intro__content}>
-        <div className={styles.lozenge__external}>
-          <div className={styles.lozenge__internal}>
-            <Image
-              src="/jp.png"
-              alt="Space"
-              className={styles.lozenge__image}
-              width={1914}
-              height={1914}
-            />
+        <div className={styles.avatar__lozenge}>
+          <div className={styles.lozenge__external}>
+            <div className={styles.lozenge__internal}>
+              <Image
+                src="/jp.png"
+                alt="Space"
+                className={styles.lozenge__image}
+                width={1914}
+                height={1914}
+              />
+            </div>
           </div>
         </div>
         <div className={styles.content__text}>
