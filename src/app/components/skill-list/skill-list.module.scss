@@ -1,0 +1,25 @@
+@use "src/app/theme.scss";
+
+.skillList {
+  background-color: theme.$lightGray;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  header {
+    width: 100%;
+    margin-bottom: 10px;
+    h1 {
+      font-size: 2rem;
+      color: #fff;
+      text-align: center;
+    }
+  }
+}
+.skillList__container {
+  width: 840px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

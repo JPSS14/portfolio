@@ -1,0 +1,57 @@
+@use "src/app/theme.scss";
+
+.skillCard__article {
+  width: 370px;
+  min-width: 309px;
+  height: 285px;
+  background-color: theme.$darkGray;
+  margin: 10px 8px;
+  border-radius: 15px;
+  padding: 16px;
+  position: relative;
+  color: theme.$white;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  border: 1px solid theme.$mainThemeColor;
+
+  .skillCard__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+
+    h2 {
+      margin-left: 16px;
+    }
+  }
+
+  .skillCard__content {
+    padding: 8px;
+    background-color: theme.$lightGray;
+    border-radius: 10px;
+    height: 135px;
+    margin-bottom: 12px;
+  }
+  .skillCard__professionalXP {
+    display: flex;
+    align-items: center;
+    height: 25px;
+    background-color: theme.$mainThemeColor;
+    border-radius: 20px;
+
+    .star {
+      color: theme.$black;
+      margin: 0 4px;
+      font-size: 1.2rem;
+    }
+
+    p {
+      color: theme.$black;
+      font-weight: bold;
+      margin-right: 4px;
+    }
+  }
+  @media (max-width: theme.$smallMobile) {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
