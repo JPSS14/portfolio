@@ -1,302 +1,424 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta itemprop="image" content="Assets/images/portfolio-img.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta itemprop="image" content="Assets/images/portfolio-img.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link href="Assets/fonticon.css" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Assets/boot.css">
-    <link rel="stylesheet" href="Assets/style.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Assets/boot.css" />
+    <link rel="stylesheet" href="Assets/style.css" />
 
     <title>João Pedro Scarabelli Silva</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- HEADER -->
     <header class="main_header">
-        <h1 class="logo"><a href="index.html">MyPortfolio</a></h1>
-        <nav class="main_header_nav">
-            <ul>
-                <li><a class="icon-linkedin2" href="https://www.linkedin.com/in/jo%C3%A3o-pedro-s-silva/"></a></li>
-                <li><a class="icon-github" href="https://github.com/JPSS14"></a></li>
-            </ul>
-        </nav>
+      <h1 class="logo"><a href="index.html">MyPortfolio</a></h1>
+      <nav class="main_header_nav">
+        <ul>
+          <li>
+            <a
+              class="icon-linkedin2"
+              href="https://www.linkedin.com/in/jo%C3%A3o-pedro-s-silva/"
+            ></a>
+          </li>
+          <li><a class="icon-github" href="https://github.com/JPSS14"></a></li>
+        </ul>
+      </nav>
     </header>
     <!-- HEADER -->
     <main class="main">
-        <header class="main_presentation">
-            <div class="foto">
-                <img class="foto_img" src="Assets/images/jp.png" \>
-            </div>
-            <div class="presentation">
-                <p>Olá, sou</p>
-                <p class="my_name">João Pedro Scarabelli Silva</p>
-                <div class="description">
-                    <p>Front-End Developer | React | Typescript | Material UI</p>
-                </div>
-            </div>
+      <header class="main_presentation">
+        <div class="foto">
+          <img class="foto_img" src="Assets/images/jp.png" \ />
+        </div>
+        <div class="presentation">
+          <p>Olá, sou</p>
+          <p class="my_name">João Pedro Scarabelli Silva</p>
+          <div class="description">
+            <p>Front-End Developer | React | Typescript | Material UI</p>
+          </div>
+        </div>
+      </header>
+
+      <!-- PROJETOS -->
+      <section class="projects">
+        <header class="projects_header">
+          <h1>Projetos</h1>
         </header>
 
-        <!-- PROJETOS -->
-        <section class="projects">
-            <header class="projects_header">
-                <h1>Projetos</h1>
+        <!-- Projetos React -->
+        <section class="project">
+          <header class="project_header">
+            <h2>React</h2>
+            <div class="header_img_container">
+              <img src="Assets/images/react.png" />
+            </div>
+          </header>
+
+          <!-- React Books 2 -->
+          <article class="project_article">
+            <header class="project_article_header">
+              <h3>React Books 2</h3>
+              <p>Status: <span class="status_comp">Completo</span></p>
+              <div class="project_article_header_tecnologies">
+                <ul>
+                  <li>ReactJS</li>
+                  <li>Typescript</li>
+                  <li>Material UI</li>
+                  <li>Axios</li>
+                  <li>Jest</li>
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                </ul>
+              </div>
             </header>
+            <div class="project_article_content">
+              <div class="project_article_content_img">
+                <img src="Assets/images/react-books-2-2.png" />
+              </div>
+              <div class="project_article_content_text">
+                <p class="title">Introdução</p>
+                <p>
+                  O projeto React Books 2 é um buscador de livros desenvolvido
+                  em React, onde o usuário pode ver as principais informações
+                  sobre o livro pesquisado, assim como recomendações baseadas no
+                  livro escolhido. Também é possível ler uma amostra do livro ou
+                  comprá-lo caso esteja disponível.
+                </p>
+                <p>
+                  Toda a aplicação é baseada na API Google Books, todos os
+                  resultados das pesquisas assim como as páginas do livro que
+                  são geradas de forma dinâmica, são provenientes da API Google
+                  Books.
+                </p>
+                <div class="project_article_content_links">
+                  <a
+                    class="success"
+                    href="https://jpss14.github.io/react-books-2"
+                    target="_blank"
+                    >Testar</a
+                  >
+                  <a class="read_more" href="Projetos/health-plus.html"
+                    >Saiba mais</a
+                  >
+                </div>
+              </div>
+            </div>
+          </article>
+          <!-- /React Books 2 -->
 
-            <!-- Projetos React -->
-            <section class="project">
-                <header class="project_header">
-                    <h2>React</h2>
-                    <div class="header_img_container">
-                        <img src="Assets/images/react.png">
-                    </div>
-                </header>
+          <!-- Health+ -->
+          <article class="project_article">
+            <header class="project_article_header">
+              <h3>Health+</h3>
+              <p>Status: <span class="status_comp">Completo</span></p>
+              <div class="project_article_header_tecnologies">
+                <ul>
+                  <li>ReactJS</li>
+                  <li>NextJS</li>
+                  <li>Typescript</li>
+                  <li>Material UI</li>
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                </ul>
+              </div>
+            </header>
+            <div class="project_article_content">
+              <div class="project_article_content_img">
+                <img src="Assets/images/health-plus-3.png" />
+              </div>
+              <div class="project_article_content_text">
+                <p class="title">Introdução</p>
+                <p>
+                  O projeto Health+ é uma landing page desenvolvida em React com
+                  NextJS, seu objetivo é anunciar um cartão de descontos em
+                  consultas médicas e farmácias, onde temos duas modalidades de
+                  planos com suas respectivas vantagens.
+                </p>
+                <p>
+                  Toda a aplicação é voltada para a conversão de assinaturas do
+                  cartão, possuindo uma seção de depoimentos de clientes, rede
+                  de farmácias credenciadas e a confecção do cartão escolhido
+                  pelo usuário.
+                </p>
+                <div class="project_article_content_links">
+                  <a
+                    class="success"
+                    href="https://jpss14.github.io/health-plus"
+                    target="_blank"
+                    >Testar</a
+                  >
+                  <a class="read_more" href="Projetos/health-plus.html"
+                    >Saiba mais</a
+                  >
+                </div>
+              </div>
+            </div>
+          </article>
+          <!-- /Health+ -->
 
-                <!-- Health+ -->
-                <article class="project_article">
-                    <header class="project_article_header">
-                        <h3>Health+</h3>
-                        <p>Status: <span class="status_comp">Completo</span></p>
-                        <div class="project_article_header_tecnologies">
-                            <ul>
-                                <li>ReactJS</li>
-                                <li>NextJS</li>
-                                <li>Typescript</li>
-                                <li>Material UI</li>
-                                <li>HTML5</li>
-                                <li>CSS3</li>
-                            </ul>
-                        </div>
-                    </header>
-                    <div class="project_article_content">
-                        <div class="project_article_content_img">
-                            <img src="Assets/images/health-plus-3.png">
-                        </div>
-                        <div class="project_article_content_text">
-                            <p class="title">Introdução</p>
-                            <p>O projeto Health+ é uma landing page desenvolvida em React com NextJS, seu objetivo é
-                                anunciar um cartão de descontos em consultas médicas e farmácias, onde temos duas
-                                modalidades de planos com suas respectivas vantagens.</p>
-                            <p>Toda a aplicação é voltada para a conversão de assinaturas do cartão, possuindo uma seção
-                                de depoimentos de clientes, rede de farmácias credenciadas e a confecção do cartão
-                                escolhido pelo usuário.</p>
-                            <div class="project_article_content_links">
-                                <a class="success" href="https://jpss14.github.io/health-plus"
-                                    target="_blank">Testar</a>
-                                <a class="read_more" href="Projetos/health-plus.html">Saiba mais</a>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <!-- /Health+ -->
+          <!-- Quiz React -->
+          <article class="project_article">
+            <header class="project_article_header">
+              <h3>Quiz React</h3>
+              <p>Status: <span class="status_comp">Completo</span></p>
+              <div class="project_article_header_tecnologies">
+                <ul>
+                  <li>ReactJS</li>
+                  <li>NextJS</li>
+                  <li>Typescript</li>
+                  <li>JavaScript</li>
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                </ul>
+              </div>
+            </header>
+            <div class="project_article_content">
+              <div class="project_article_content_img">
+                <img src="Assets/images/quiz-react.png" />
+              </div>
+              <div class="project_article_content_text">
+                <p class="title">Introdução</p>
+                <p>
+                  O Quiz React é um sistema desenvolvido com React JS, Next JS e
+                  Typescript ele é composto por um total de 97 perguntas sobre
+                  os Vingadores. Onde você ganha experiência no modo jogo, e
+                  aumenta o seu nível.
+                </p>
+                <p>
+                  Diversos conceitos sobre React e Next são postos em prática
+                  neste projeto tais como o uso de rotas dinâmicas, consumo
+                  filtrado de JSON, contexts para comunicação entre componentes
+                  e diversos tipos de hooks.
+                </p>
+                <div class="project_article_content_links">
+                  <a
+                    class="success"
+                    href="https://jpss14.github.io/quiz-react"
+                    target="_blank"
+                    >Testar</a
+                  >
+                  <a class="read_more" href="Projetos/quiz-react.html"
+                    >Saiba mais</a
+                  >
+                </div>
+              </div>
+            </div>
+          </article>
+          <!-- /Quiz React -->
 
-                <!-- Quiz React -->
-                <article class="project_article">
-                    <header class="project_article_header">
-                        <h3>Quiz React</h3>
-                        <p>Status: <span class="status_comp">Completo</span></p>
-                        <div class="project_article_header_tecnologies">
-                            <ul>
-                                <li>ReactJS</li>
-                                <li>NextJS</li>
-                                <li>Typescript</li>
-                                <li>JavaScript</li>
-                                <li>HTML5</li>
-                                <li>CSS3</li>
-                            </ul>
-                        </div>
-                    </header>
-                    <div class="project_article_content">
-                        <div class="project_article_content_img">
-                            <img src="Assets/images/quiz-react.png">
-                        </div>
-                        <div class="project_article_content_text">
-                            <p class="title">Introdução</p>
-                            <p>O Quiz React é um sistema desenvolvido com React JS, Next JS e Typescript ele é composto
-                                por um total de 97 perguntas sobre os Vingadores. Onde você ganha experiência no modo
-                                jogo, e aumenta o seu nível.</p>
-                            <p>Diversos conceitos sobre React e Next são postos em prática neste projeto tais como o uso
-                                de rotas dinâmicas, consumo filtrado de JSON, contexts para comunicação entre
-                                componentes e diversos tipos de hooks.</p>
-                            <div class="project_article_content_links">
-                                <a class="success" href="https://jpss14.github.io/quiz-react" target="_blank">Testar</a>
-                                <a class="read_more" href="Projetos/quiz-react.html">Saiba mais</a>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <!-- /Quiz React -->
+          <!-- React Bank -->
+          <article class="project_article">
+            <header class="project_article_header">
+              <h3>React Bank</h3>
+              <p>Status: <span class="status_const">Stand by</span></p>
+              <div class="project_article_header_tecnologies">
+                <ul>
+                  <li>ReactJS</li>
+                  <li>NextJS</li>
+                  <li>Typescript</li>
+                  <li>JavaScript</li>
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>SASS</li>
+                </ul>
+              </div>
+            </header>
+            <div class="project_article_content">
+              <div class="project_article_content_img">
+                <img src="Assets/images/react-bank-count.png" />
+              </div>
+              <div class="project_article_content_text">
+                <p class="title">Introdução</p>
+                <p>
+                  React Bank é um simulador de banco, onde busco testar o uso do
+                  Sass e treinar o desenvolvimento de interfaces, além de
+                  enfatizar o uso de React, Next js e seus benefícios.
+                </p>
+                <p>
+                  Durante a criação da interface percebi que era possível
+                  implementar diversas funcionalidades e regras de negócio,
+                  todas a nivel de front-end.
+                </p>
+                <div class="project_article_content_links">
+                  <a class="read_more" href="Projetos/react-bank.html"
+                    >Saiba mais</a
+                  >
+                </div>
+              </div>
+            </div>
+          </article>
+          <!-- /React Bank -->
 
-                <!-- React Bank -->
-                <article class="project_article">
-                    <header class="project_article_header">
-                        <h3>React Bank</h3>
-                        <p>Status: <span class="status_const">Stand by</span></p>
-                        <div class="project_article_header_tecnologies">
-                            <ul>
-                                <li>ReactJS</li>
-                                <li>NextJS</li>
-                                <li>Typescript</li>
-                                <li>JavaScript</li>
-                                <li>HTML5</li>
-                                <li>CSS3</li>
-                                <li>SASS</li>
-                            </ul>
-                        </div>
-                    </header>
-                    <div class="project_article_content">
-                        <div class="project_article_content_img">
-                            <img src="Assets/images/react-bank-count.png">
-                        </div>
-                        <div class="project_article_content_text">
-                            <p class="title">Introdução</p>
-                            <p>React Bank é um simulador de banco, onde busco testar o uso do Sass e treinar o
-                                desenvolvimento de interfaces, além de enfatizar o uso de React, Next js e seus
-                                benefícios.</p>
-                            <p>Durante a criação da interface percebi que era possível implementar diversas
-                                funcionalidades e regras de negócio, todas a nivel de front-end.</p>
-                            <div class="project_article_content_links">
-                                <a class="read_more" href="Projetos/react-bank.html">Saiba mais</a>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <!-- /React Bank -->
-
-                <!-- F1 React -->
-                <article class="project_article">
-                    <header class="project_article_header">
-                        <h3>F1 React</h3>
-                        <p>Status: <span class="status_otmz">Otimizando</span></p>
-                        <div class="project_article_header_tecnologies">
-                            <ul>
-                                <li>ReactJS</li>
-                                <li>JavaScript</li>
-                                <li>HTML5</li>
-                                <li>CSS3</li>
-                            </ul>
-                        </div>
-                    </header>
-                    <div class="project_article_content">
-                        <div class="project_article_content_img">
-                            <img src="Assets/images/f1-react-img1.png">
-                        </div>
-                        <div class="project_article_content_text">
-                            <p class="title">Introdução</p>
-                            <p>O projeto consiste em um simulador de corrida, em que apliquei informações em uma fórmula
-                                de velocidade média, onde pretendo sempre descobrir o tempo em que um carro leva para
-                                completar a volta. </p>
-                            <p>Desta forma consigo inserir 20 carros e simular 71 voltas em Interlagos, logo após é
-                                divulgado o ranking dos pilotos.</p>
-                            <div class="project_article_content_links">
-                                <a class="success" href="https://jpss14.github.io/f1-react/" target="_blank">Testar</a>
-                                <a class="read_more" href="Projetos/f1-react.html">Saiba mais</a>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <!-- /F1 React -->
-
-            </section>
-            <!-- /Projetos React -->
-
-            <!-- Projetos Front-end -->
-            <section class="project">
-                <header class="project_header">
-                    <h2>Front-end</h2>
-                    <div class="header_img_container">
-                        <img src="Assets/images/HTML5_Logo.png">
-                    </div>
-                </header>
-
-                <!-- IGN Clone -->
-                <article class="project_article">
-                    <header class="project_article_header">
-                        <h3>IGN Clone</h3>
-                        <p>Status: <span class="status_comp">Completo</span></p>
-                        <div class="project_article_header_tecnologies">
-                            <ul>
-                                <li>PHP</li>
-                                <li>JavaScript</li>
-                                <li>HTML5</li>
-                                <li>CSS3</li>
-                            </ul>
-                        </div>
-                    </header>
-                    <div class="project_article_content">
-                        <div class="project_article_content_img">
-                            <img src="Assets/images/clone-ign-br.PNG">
-                        </div>
-                        <div class="project_article_content_text">
-                            <p class="title">Introdução</p>
-                            <p>Com o objetivo de treinar conceitos de HTML5, CSS, JavaScript e PHP, este repositório
-                                consiste em um clone de uma notícia do site IGN Brasil, busco deixar o site o bem
-                                parecido com o original fazendo algumas adaptações e alterações durante o
-                                desenvolvimento.</p>
-                            <div class="project_article_content_links">
-                                <a class="read_more" href="Projetos/ign-clone.html">Saiba mais</a>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <!-- /IGN Clone -->
-
-                <!-- Buy cars front -->
-                <article class="project_article">
-                    <header class="project_article_header">
-                        <h3>Buy cars front</h3>
-                        <p>Status: <span class="status_const">Stand by</span></p>
-                        <div class="project_article_header_tecnologies">
-                            <ul>
-                                <li>JavaScript</li>
-                                <li>HTML5</li>
-                                <li>CSS3</li>
-                            </ul>
-                        </div>
-                    </header>
-                    <div class="project_article_content">
-                        <div class="project_article_content_img">
-                            <img src="Assets/images/buy-cars-front.png">
-                        </div>
-                        <div class="project_article_content_text">
-                            <p class="title">Introdução</p>
-                            <p>Com base em sites de grandes montadoras de veículos, estou construindo o Buy cars front,
-                                com o objetivo de aprender novas formas de construir um site utilizando html e css puro.
-                            </p>
-
-                            <p> O projeto ainda está em construção e o seu diferencial com relação a outros projetos que
-                                já construí está em sua navbar que contém um dropdown com imagens e divs, que chama
-                                outro dropdown, desta forma tenho praticado muito posicionamento e CSS3.</p>
-                            <div class="project_article_content_links">
-                                <a class="success" href="https://jpss14.github.io/buy-cars-front/"
-                                    target="_blank">Testar</a>
-                                <a class="read_more" href="Projetos/buy-cars-front.html">Saiba mais</a>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <!-- /Buy cars front -->
-
-            </section>
-            <!-- /Projetos Front-end -->
+          <!-- F1 React -->
+          <article class="project_article">
+            <header class="project_article_header">
+              <h3>F1 React</h3>
+              <p>Status: <span class="status_otmz">Otimizando</span></p>
+              <div class="project_article_header_tecnologies">
+                <ul>
+                  <li>ReactJS</li>
+                  <li>JavaScript</li>
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                </ul>
+              </div>
+            </header>
+            <div class="project_article_content">
+              <div class="project_article_content_img">
+                <img src="Assets/images/f1-react-img1.png" />
+              </div>
+              <div class="project_article_content_text">
+                <p class="title">Introdução</p>
+                <p>
+                  O projeto consiste em um simulador de corrida, em que apliquei
+                  informações em uma fórmula de velocidade média, onde pretendo
+                  sempre descobrir o tempo em que um carro leva para completar a
+                  volta.
+                </p>
+                <p>
+                  Desta forma consigo inserir 20 carros e simular 71 voltas em
+                  Interlagos, logo após é divulgado o ranking dos pilotos.
+                </p>
+                <div class="project_article_content_links">
+                  <a
+                    class="success"
+                    href="https://jpss14.github.io/f1-react/"
+                    target="_blank"
+                    >Testar</a
+                  >
+                  <a class="read_more" href="Projetos/f1-react.html"
+                    >Saiba mais</a
+                  >
+                </div>
+              </div>
+            </div>
+          </article>
+          <!-- /F1 React -->
         </section>
-        <!-- /PROJETOS -->
+        <!-- /Projetos React -->
+
+        <!-- Projetos Front-end -->
+        <section class="project">
+          <header class="project_header">
+            <h2>Front-end</h2>
+            <div class="header_img_container">
+              <img src="Assets/images/HTML5_Logo.png" />
+            </div>
+          </header>
+
+          <!-- IGN Clone -->
+          <article class="project_article">
+            <header class="project_article_header">
+              <h3>IGN Clone</h3>
+              <p>Status: <span class="status_comp">Completo</span></p>
+              <div class="project_article_header_tecnologies">
+                <ul>
+                  <li>PHP</li>
+                  <li>JavaScript</li>
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                </ul>
+              </div>
+            </header>
+            <div class="project_article_content">
+              <div class="project_article_content_img">
+                <img src="Assets/images/clone-ign-br.PNG" />
+              </div>
+              <div class="project_article_content_text">
+                <p class="title">Introdução</p>
+                <p>
+                  Com o objetivo de treinar conceitos de HTML5, CSS, JavaScript
+                  e PHP, este repositório consiste em um clone de uma notícia do
+                  site IGN Brasil, busco deixar o site o bem parecido com o
+                  original fazendo algumas adaptações e alterações durante o
+                  desenvolvimento.
+                </p>
+                <div class="project_article_content_links">
+                  <a class="read_more" href="Projetos/ign-clone.html"
+                    >Saiba mais</a
+                  >
+                </div>
+              </div>
+            </div>
+          </article>
+          <!-- /IGN Clone -->
+
+          <!-- Buy cars front -->
+          <article class="project_article">
+            <header class="project_article_header">
+              <h3>Buy cars front</h3>
+              <p>Status: <span class="status_const">Stand by</span></p>
+              <div class="project_article_header_tecnologies">
+                <ul>
+                  <li>JavaScript</li>
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                </ul>
+              </div>
+            </header>
+            <div class="project_article_content">
+              <div class="project_article_content_img">
+                <img src="Assets/images/buy-cars-front.png" />
+              </div>
+              <div class="project_article_content_text">
+                <p class="title">Introdução</p>
+                <p>
+                  Com base em sites de grandes montadoras de veículos, estou
+                  construindo o Buy cars front, com o objetivo de aprender novas
+                  formas de construir um site utilizando html e css puro.
+                </p>
+
+                <p>
+                  O projeto ainda está em construção e o seu diferencial com
+                  relação a outros projetos que já construí está em sua navbar
+                  que contém um dropdown com imagens e divs, que chama outro
+                  dropdown, desta forma tenho praticado muito posicionamento e
+                  CSS3.
+                </p>
+                <div class="project_article_content_links">
+                  <a
+                    class="success"
+                    href="https://jpss14.github.io/buy-cars-front/"
+                    target="_blank"
+                    >Testar</a
+                  >
+                  <a class="read_more" href="Projetos/buy-cars-front.html"
+                    >Saiba mais</a
+                  >
+                </div>
+              </div>
+            </div>
+          </article>
+          <!-- /Buy cars front -->
+        </section>
+        <!-- /Projetos Front-end -->
+      </section>
+      <!-- /PROJETOS -->
     </main>
 
     <!-- FOOTER -->
     <footer class="main_footer">
-        <h1 class="logo"><a href="index.html">MyPortfolio</a></h1>
-        <nav class="main_footer_nav">
-            <ul>
-                <li><a class="icon-linkedin2" href="https://www.linkedin.com/in/jo%C3%A3o-pedro-s-silva/"></a></li>
-                <li><a class="icon-github" href="https://github.com/JPSS14"></a></li>
-            </ul>
-        </nav>
+      <h1 class="logo"><a href="index.html">MyPortfolio</a></h1>
+      <nav class="main_footer_nav">
+        <ul>
+          <li>
+            <a
+              class="icon-linkedin2"
+              href="https://www.linkedin.com/in/jo%C3%A3o-pedro-s-silva/"
+            ></a>
+          </li>
+          <li><a class="icon-github" href="https://github.com/JPSS14"></a></li>
+        </ul>
+      </nav>
     </footer>
     <!-- /FOOTER -->
-</body>
-
+  </body>
 </html>
