@@ -6,7 +6,7 @@ export default function HomeTemplate({
   children: React.ReactNode;
 }) {
   return (
-    <div>
+    <div style={{ maxWidth: "1536px", margin: "0 auto", position: "relative" }}>
       <Header />
       <Intro />
       <div>{children}</div>
