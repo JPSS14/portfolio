@@ -17,6 +17,26 @@ export const mainSkills: SkillCardProps[] = [
     content: "text",
   },
   {
+    title: "Javascript",
+    skillImage: "javascript_logo.svg",
+    content: "text",
+  },
+  {
+    title: "Next",
+    skillImage: "next_logo-2.svg",
+    content: "text",
+  },
+  {
+    title: "Sass",
+    skillImage: "sass_logo.svg",
+    content: "text",
+  },
+  {
+    title: "Jest",
+    skillImage: "jest_logo.svg",
+    content: "text",
+  },
+  {
     title: "Git",
     skillImage: "git_logo.svg",
     content: "text",
