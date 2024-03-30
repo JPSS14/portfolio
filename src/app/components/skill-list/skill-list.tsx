@@ -6,7 +6,7 @@ export const SkillList = () => {
   return (
     <section className={styles.skillList}>
       <header>
-        <h1>Skills</h1>
+        <h1>Hard Skills</h1>
       </header>
       <div className={styles.skillList__container}>
         {mainSkills.map((item, index) => (
