@@ -1,0 +1,30 @@
+@use "src/app/theme.scss";
+
+.skillCard__stack {
+  position: absolute;
+  text-align: center;
+  width: 48px;
+  height: 20px;
+  bottom: -10%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-family: "tajawal";
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skillCard__stack__front {
+  background: theme.$frontStackTheme;
+}
+
+.skillCard__stack__back {
+  background: theme.$backStackTheme;
+}
+
+.skillCard__stack__full {
+  background: theme.$fullStackTheme;
+}
+
+.skillCard__stack__ux {
+  background: theme.$uxStackTheme;
+}
