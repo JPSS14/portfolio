@@ -1,0 +1,80 @@
+@use "src/app/theme.scss";
+
+.professionalxp__container {
+  width: 100%;
+  background: theme.$black;
+  color: #fff;
+  padding: 20px;
+
+  .container__header {
+    margin: 0 auto;
+    text-align: center;
+
+    h1 {
+      font-size: 2rem;
+    }
+  }
+
+  .professionalxp__article {
+    position: relative;
+    margin: 40px auto;
+    background: theme.$white;
+    max-width: 500px;
+    height: 500px;
+    border-radius: 16px;
+    color: theme.$black;
+
+    .article__logo__container {
+      width: 100%;
+      border-bottom: 3px solid theme.$black;
+      display: flex;
+      justify-content: center;
+      .article__logo {
+        width: 150px;
+        height: 100px;
+        object-fit: contain;
+      }
+    }
+
+    .nextOpportunity {
+      position: absolute;
+      background: theme.$white;
+      width: 70px;
+      height: 70px;
+      top: 50%;
+      right: -20%;
+      border-radius: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+    }
+
+    .professionalxp__article__content {
+      height: 300px;
+      padding: 8px;
+
+      .article__content__description {
+        margin-top: 16px;
+
+        p:first-child {
+          text-align: center;
+        }
+
+        p {
+          margin-bottom: 8px;
+        }
+      }
+    }
+
+    .professionalxp__article__footer {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 16px;
+      height: 100px;
+      width: 100%;
+      border-top: 3px solid theme.$black;
+    }
+  }
+}

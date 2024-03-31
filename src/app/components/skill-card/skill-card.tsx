@@ -8,7 +8,6 @@ export const SkillCard = ({
   skillImage,
   skillStackTitle,
 }: SkillCardProps) => {
-  console.log("skillStackTitle: ", skillStackTitle);
   return (
     <article className={styles.skillCard__article}>
       <Image src={skillImage} alt={title} width={34} height={34} />

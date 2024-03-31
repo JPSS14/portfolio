@@ -24,7 +24,5 @@ export const SkillStack = ({ skillStackTitle }: SkillStackProps) => {
       break;
   }
 
-  console.log("classNames: ", classNames);
-
   return <div className={classNames}>{skillStackTitle}</div>;
 };
