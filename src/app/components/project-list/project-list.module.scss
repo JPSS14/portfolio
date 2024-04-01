@@ -1,0 +1,15 @@
+@use "src/app/theme.scss";
+
+.projectList__section {
+  width: 100%;
+  background: theme.$darkGray;
+
+  .section__header {
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    h1 {
+      font-size: 2rem;
+    }
+  }
+}
