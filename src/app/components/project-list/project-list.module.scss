@@ -15,5 +15,11 @@
 
   .projectList__container {
     display: flex;
+    justify-content: center;
+  }
+  @media (max-width: 703px) {
+    .projectList__container {
+      display: block;
+    }
   }
 }
