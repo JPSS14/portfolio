@@ -41,7 +41,7 @@ export const ProfessionalXP = () => {
         </div>
         <div className={styles.professionalxp__article__footer}>
           <Image
-            src={"./react_logo-2.svg"}
+            src={"./react_logo.svg"}
             width={40}
             height={40}
             alt="React Logo"

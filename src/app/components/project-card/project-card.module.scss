@@ -1,0 +1,80 @@
+@use "src/app/theme.scss";
+
+.projectCard__article {
+  width: 300px;
+  height: 450px;
+  background: theme.$lightGray;
+  margin: 16px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+  .article__header {
+    width: 100%;
+    text-align: center;
+    padding: 8px;
+    background-color: theme.$frontStackTheme;
+
+    h2 {
+      font-size: 1.5rem;
+      color: theme.$white;
+    }
+  }
+
+  .article__image__container {
+    width: 100%;
+    height: 144px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+    }
+  }
+
+  .article__content__container {
+    display: flex;
+    justify-content: space-between;
+    height: calc(100% - 188px);
+
+    .content__aside__stack {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      width: 50px;
+      height: 100%;
+      background: theme.$white;
+    }
+
+    .content__description {
+      width: calc(100% - 58px);
+      color: theme.$white;
+
+      p {
+        margin-bottom: 8px;
+      }
+
+      .description__title {
+        font-size: 1.2rem;
+        font-weight: 800;
+        border-top: 3px solid theme.$frontStackTheme;
+        border-bottom: 3px solid theme.$frontStackTheme;
+        border-left: 3px solid theme.$frontStackTheme;
+        background: theme.$black;
+        color: theme.$white;
+        padding: 8px;
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
+
+.projectCard__cta {
+  margin: 24px 16px;
+  width: 300px;
+
+  button:first-child {
+    margin-bottom: 8px;
+  }
+}
