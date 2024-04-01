@@ -3,7 +3,7 @@ import { SkillCardProps } from "@/app/components/skill-card/types";
 export const mainSkills: SkillCardProps[] = [
   {
     title: "React",
-    skillImage: "react_logo-2.svg",
+    skillImage: "react_logo.svg",
     skillStackTitle: "Front",
     content: "text",
   },
