@@ -1,0 +1,83 @@
+@use "src/app/theme.scss";
+
+.button {
+  width: 248px;
+  height: 34px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-size: 16px;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 500;
+
+  &.fullWidth {
+    width: 100%;
+  }
+
+  &.primary {
+    background-color: theme.$frontStackTheme;
+    color: #fff;
+
+    &:hover {
+      background-color: theme.$frontStackThemeHover;
+      cursor: pointer;
+    }
+
+    &.outlined {
+      background-color: transparent;
+      color: theme.$frontStackTheme;
+      border: solid 2px theme.$frontStackTheme;
+      box-shadow: none;
+
+      &:hover {
+        border-color: theme.$frontStackThemeHover;
+        color: theme.$frontStackThemeHover;
+      }
+    }
+  }
+
+  &.success {
+    background-color: theme.$backStackTheme;
+    color: theme.$white;
+
+    &:hover {
+      background-color: theme.$backStackThemeHover;
+      cursor: pointer;
+      color: #fff;
+    }
+
+    &.outlined {
+      background-color: transparent;
+      color: theme.$backStackTheme;
+      border: solid 2px theme.$backStackTheme;
+      box-shadow: none;
+
+      &:hover {
+        border-color: theme.$backStackThemeHover;
+        color: theme.$backStackThemeHover;
+      }
+    }
+  }
+
+  &.error {
+    background-color: var(--errorThemeColor);
+    color: #fff;
+
+    &:hover {
+      background-color: var(--errorThemeColorHover);
+    }
+
+    &.outlined {
+      background-color: transparent;
+      color: var(--errorThemeColor);
+      border: solid 2px var(--errorThemeColor);
+      box-shadow: none;
+
+      &:hover {
+        border-color: var(--errorThemeColorHover);
+        color: var(--errorThemeColorHover);
+      }
+    }
+  }
+}
