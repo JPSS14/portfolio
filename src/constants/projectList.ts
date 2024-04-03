@@ -67,7 +67,7 @@ export const projectList: ProjectCardType[] = [
       `O projeto Cars Register, é uma aplicação que permite ao usuário cadastrar veículos, e dependendo dos dados o veículo cadastrado recebe estrelas como uma forma de status. `,
       `Cada veículo é representado em um formato de card.`,
     ],
-    repoLink: "https://github.com/JPSS14/react-books-2",
+    repoLink: "https://github.com/JPSS14/cars-register",
     deployLink: "",
   },
 ];
