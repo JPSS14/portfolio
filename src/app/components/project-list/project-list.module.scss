@@ -22,4 +22,8 @@
       display: block;
     }
   }
+
+  @media (max-width: 500px) {
+    padding: 16px 8px;
+  }
 }

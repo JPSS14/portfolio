@@ -79,7 +79,7 @@ export const settings = {
     {
       breakpoint: 360,
       settings: {
-        slidesToShow: 1.07,
+        slidesToShow: 1.08,
         slidesToScroll: 1,
       },
     },
