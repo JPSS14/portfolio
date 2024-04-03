@@ -21,8 +21,7 @@
     font-weight: 500;
   }
 
-  // @media (max-width: theme.$smallMobile) {
-  //   width: 100%;
-  //   margin: 10px 0;
-  // }
+  @media (max-width: theme.$smallMobile) {
+    width: 140px;
+  }
 }
