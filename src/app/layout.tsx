@@ -10,6 +10,7 @@ const tajawal = Tajawal({
 const ubuntu = Ubuntu({
   subsets: ["latin"],
   weight: ["300", "400", "500", "700"],
+  variable: "--font-ubuntu",
 });
 
 export const metadata = {
