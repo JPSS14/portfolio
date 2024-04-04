@@ -1,5 +1,11 @@
 import "./globals.scss";
-import { Ubuntu } from "next/font/google";
+import { Ubuntu, Tajawal } from "next/font/google";
+
+const tajawal = Tajawal({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "700"],
+  variable: "--font-tajawal",
+});
 
 const ubuntu = Ubuntu({
   subsets: ["latin"],
@@ -17,8 +23,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-BR">
-      <body className={ubuntu.className}>{children}</body>
+    <html lang="pt-BR" className={`${tajawal.className} ${ubuntu.className} `}>
+      <body>{children}</body>
     </html>
   );
 }
