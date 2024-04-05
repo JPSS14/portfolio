@@ -4,7 +4,7 @@ My portfolio
 
 ## Getting Started
 
-Acesse o [link](https://jpss14.github.io/portfolio/index.html) para conferir!
+Acesse o [link](https://jpss14-portfolio.vercel.app/) para conferir!
 
 ![portfolio-img](https://user-images.githubusercontent.com/40327303/105789325-fd884f00-5f60-11eb-99f4-1a328827f1b0.PNG)
 
