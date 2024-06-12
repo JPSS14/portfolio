@@ -1,6 +1,6 @@
 import Link from "next/link";
 import styles from "./header.module.scss";
-import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/Ai";
 
 export const Header = () => {
   return (
