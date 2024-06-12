@@ -2,10 +2,10 @@ import Image from "next/image";
 import styles from "./project-card.module.scss";
 import { Button } from "../button";
 import Link from "next/link";
-import { ProjectCardType } from "./types";
+import { ProjectDetailsMapperType } from "@/constants/projectList.mapper";
 
 interface ProjectCardProps {
-  projectItem: ProjectCardType;
+  projectItem: ProjectDetailsMapperType;
 }
 
 export const ProjectCard = ({ projectItem }: ProjectCardProps) => {
@@ -17,7 +17,7 @@ export const ProjectCard = ({ projectItem }: ProjectCardProps) => {
         </header>
         <div className={styles.article__image__container}>
           <Image
-            src={projectItem.projectImage}
+            src={projectItem.projectMainImage}
             alt={projectItem.title}
             width={1912}
             height={912}
@@ -25,12 +25,12 @@ export const ProjectCard = ({ projectItem }: ProjectCardProps) => {
         </div>
         <div className={styles.article__content__container}>
           <div className={styles.content__aside__stack}>
-            {projectItem.projectStack.map((item, index) => (
+            {projectItem.skills.map((item, index) => (
               <Image
                 src={item.image}
                 width={32}
                 height={32}
-                alt={`${item.name} logo`}
+                alt={`${item.title} logo`}
                 key={index}
               />
             ))}

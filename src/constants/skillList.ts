@@ -1,6 +1,6 @@
-import { SkillCardProps } from "@/app/components/skill-card/types";
+import { SkillsType } from "@/app/components/skill-card/types";
 
-export const mainSkills: SkillCardProps[] = [
+export const mainSkills: SkillsType[] = [
   {
     title: "React",
     skillImage: "react_logo.svg",

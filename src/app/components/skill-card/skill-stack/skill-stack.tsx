@@ -1,7 +1,8 @@
+import { SkillStacksType } from "@/constants/projectList";
 import styles from "./skill-stack.module.scss";
 
 interface SkillStackProps {
-  skillStackTitle: "Front" | "Back" | "Full" | "UX";
+  skillStackTitle: SkillStacksType;
 }
 
 export const SkillStack = ({ skillStackTitle }: SkillStackProps) => {

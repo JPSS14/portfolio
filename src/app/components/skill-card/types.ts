@@ -1,6 +1,8 @@
-export interface SkillCardProps {
+import { SkillStacksType } from "@/constants/projectList";
+
+export interface SkillsType {
   title: string;
   skillImage: string;
-  skillStackTitle: "Front" | "Back" | "Full" | "UX";
+  skillStackTitle: SkillStacksType;
   content?: string;
 }

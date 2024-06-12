@@ -1,32 +1,38 @@
-import { ProjectCardType } from "@/app/components/project-card/types";
+export type SkillStacksType = "Front" | "Back" | "Full" | "UX";
 
-export const projectList: ProjectCardType[] = [
+export interface ContentContainerType {
+  description?: string;
+  skillImage?: string;
+  type?: string;
+}
+
+export interface ProjectDetailsType {
+  id: number;
+  title: string;
+  description: string[];
+  projectMainImage: string;
+  projectStack: SkillStacksType;
+  skills: string[];
+  repoLink: string;
+  deployLink?: string;
+  aboutSection?: {
+    content: ContentContainerType[];
+  };
+  functionsSection?: {
+    content: ContentContainerType[];
+  };
+  resultSection?: {
+    content: ContentContainerType[];
+  };
+}
+
+export const projectList: ProjectDetailsType[] = [
   {
     id: 1,
     title: "React Books 2",
-    projectImage: "/react-books2.png",
-    projectStack: [
-      {
-        name: "react",
-        image: "/react_logo.svg",
-      },
-      {
-        name: "material ui",
-        image: "/material-ui_logo-2.svg",
-      },
-      {
-        name: "typescript",
-        image: "/typescript_logo.svg",
-      },
-      {
-        name: "jest",
-        image: "/jest_logo.svg",
-      },
-      {
-        name: "git",
-        image: "/git_logo.svg",
-      },
-    ],
+    projectMainImage: "/react-books2.png",
+    projectStack: "Front",
+    skills: ["react", "material ui", "typescript", "jest", "git"],
     description: [
       `É um buscador de livros, onde o usuário pode ver as principais
     informações sobre o livro pesquisado, assim como recomendações
@@ -40,29 +46,9 @@ export const projectList: ProjectCardType[] = [
   {
     id: 2,
     title: "Cars Register",
-    projectImage: "/cars-register-1.png",
-    projectStack: [
-      {
-        name: "react",
-        image: "/react_logo.svg",
-      },
-      {
-        name: "next",
-        image: "/next_logo-2.svg",
-      },
-      {
-        name: "typescript",
-        image: "/typescript_logo.svg",
-      },
-      {
-        name: "sass",
-        image: "/sass_logo.svg",
-      },
-      {
-        name: "git",
-        image: "/git_logo.svg",
-      },
-    ],
+    projectMainImage: "/cars-register-1.png",
+    projectStack: "Front",
+    skills: ["react", "next", "typescript", "sass", "git"],
     description: [
       `O projeto Cars Register, é uma aplicação que permite ao usuário cadastrar veículos, e dependendo dos dados o veículo cadastrado recebe estrelas como uma forma de status. `,
       `Cada veículo é representado em um formato de card.`,

@@ -1,18 +1,18 @@
 "use client";
 import { ProjectCard } from "../project-card";
-import { ProjectCardType } from "../project-card/types";
 import styles from "./project-list.module.scss";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useEffect, useState } from "react";
 import { settings } from "./settings";
+import { ProjectDetailsMapperType } from "@/constants/projectList.mapper";
 
 interface ProjectListProps {
-  projectItems: ProjectCardType[];
+  projectList: ProjectDetailsMapperType[];
 }
 
-export const ProjectList = ({ projectItems }: ProjectListProps) => {
+export const ProjectList = ({ projectList }: ProjectListProps) => {
   const [windowWidth, setWindowWidth] = useState<number>(0);
 
   useEffect(() => {
@@ -40,16 +40,19 @@ export const ProjectList = ({ projectItems }: ProjectListProps) => {
       <div className={styles.projectList__container}>
         {windowWidth > 703 ? (
           <>
-            {projectItems.map((item) => (
-              <ProjectCard projectItem={item} key={item.id} />
-            ))}
+            {projectList
+              ? projectList.map((item) => (
+                  <ProjectCard projectItem={item} key={item.id} />
+                ))
+              : ""}
           </>
         ) : (
           <div className={styles.projectList__container}>
             <Slider {...settings}>
-              {projectItems.map((item) => (
-                <ProjectCard projectItem={item} key={item.id} />
-              ))}
+              {projectList &&
+                projectList.map((item) => (
+                  <ProjectCard projectItem={item} key={item.id} />
+                ))}
             </Slider>
           </div>
         )}
