@@ -1,13 +1,13 @@
 import Image from "next/image";
 import styles from "./skill-card.module.scss";
-import { SkillCardProps } from "./types";
+import { SkillsType } from "./types";
 import { SkillStack } from "./skill-stack";
 
 export const SkillCard = ({
   title,
   skillImage,
   skillStackTitle,
-}: SkillCardProps) => {
+}: SkillsType) => {
   return (
     <article className={styles.skillCard__article}>
       <Image src={skillImage} alt={title} width={34} height={34} />
