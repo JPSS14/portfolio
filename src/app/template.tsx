@@ -8,7 +8,6 @@ export default function HomeTemplate({
   return (
     <div style={{ maxWidth: "1536px", margin: "0 auto", position: "relative" }}>
       <Header />
-      <Intro />
       <div>{children}</div>
     </div>
   );

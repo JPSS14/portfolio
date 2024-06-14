@@ -8,6 +8,13 @@
   z-index: 99;
 }
 
+.relative__header {
+  position: relative;
+  background-color: theme.$black;
+  border-bottom: 3px solid theme.$mainThemeColor;
+  width: 100%;
+}
+
 .feature__text {
   color: theme.$mainThemeColor;
 }

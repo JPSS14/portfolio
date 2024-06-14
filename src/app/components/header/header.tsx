@@ -1,10 +1,18 @@
+"use client";
 import Link from "next/link";
 import styles from "./header.module.scss";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { usePathname, useSearchParams } from "next/navigation";
 
 export const Header = () => {
+  const currentUrl = `${usePathname()}${useSearchParams()}`;
+
   return (
-    <header className={styles.header}>
+    <header
+      className={`${styles.header} ${
+        currentUrl !== "/" ? styles.relative__header : ""
+      }`}
+    >
       <nav className={styles.navigation}>
         <h1>
           <Link href="/">
